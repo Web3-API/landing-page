@@ -1,7 +1,8 @@
+import Snippet from "../../components/Snippet";
 import { Carousel } from "../../components/Carousel";
 import { launchPartners } from "../../constants/testimonials";
 import { filters } from "../../theme";
-import Web3ApiAnimation from "../../lottie/Web3API_Icon_Cycle.json";
+import Web3ApiAnimation from "../../assets/Web3API_Icon_Cycle.json";
 
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,6 +20,9 @@ import {
 import React, { useState } from "react";
 import ReactGA from "react-ga";
 import Lottie from "react-lottie";
+
+
+
 
 const Root = styled(Box)({
   maxWidth: '1400px',
@@ -415,6 +419,13 @@ export const Home = () => {
           ))
         }
       </LaunchPartnersContainer>
+
+      <BetterTitle color="textPrimary" variant="h1">
+        BUIDL FAST.
+      </BetterTitle>
+      <BetterContainer>
+        <Snippet />
+      </BetterContainer>
       <BetterTitle color="textPrimary" variant="h1">
         A Better Development Experience
       </BetterTitle>
